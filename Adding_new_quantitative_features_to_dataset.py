@@ -94,4 +94,4 @@ def funkcja(liczba_powtorzen):
     return mape1
 
 
-print('Sredni procent bledu regresji: ',funkcja(1000)*100,'%')
+print('Sredni procent bledu regresji: ',funkcja(1000))
