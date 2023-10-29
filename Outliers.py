@@ -219,6 +219,6 @@ def funkcja3(liczba_powtorzen):
     mape1 = mean_absolute_percentage_error (y_test,y_pred) 
     return mape1
 
-print('Sredni procent bledu regresji po usunięciu danych odstających: ',funkcja1(1000)*100,'%')
-print('Sredni procent bledu regresji po zastąpieniu danych odstających: ',funkcja2(1000)*100,'%')
-print('Sredni procent bledu regresji bez modyfikowania danych odstających: ',funkcja3(1000)*100,'%')
+print('Sredni procent bledu regresji po usunięciu danych odstających: ',funkcja1(1000))
+print('Sredni procent bledu regresji po zastąpieniu danych odstających: ',funkcja2(1000))
+print('Sredni procent bledu regresji bez modyfikowania danych odstających: ',funkcja3(1000))
