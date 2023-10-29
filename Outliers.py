@@ -43,7 +43,7 @@ def funkcja1(liczba_powtorzen):
                 X_train_no_outliers = X_train[~outliers,:]
                 y_train_no_outliers = y_train[~outliers]
                 linReg=LinearRegression()
-                linReg.fit(X_train_no_outliers, y_train_no_outliers)
+                linReg.fit(X_train_no_outliers,y_train_no_outliers)
                 y_pred = linReg.predict(X_test)
                 minval = min(y_test.min(),y_pred.min())
                 maxval = max(y_test.max(),y_pred.max())
@@ -108,7 +108,7 @@ def funkcja2(liczba_powtorzen):
                 y_train_mean = y_train.copy()
                 y_train_mean[outliers]=y_train.mean()
                 linReg=LinearRegression()
-                linReg.fit(X_train,y_train_mean)
+                linReg.fit(X_train, y_train_mean)
                 y_pred = linReg.predict(X_test)
                 minval = min(y_test.min(),y_pred.min())
                 maxval = max(y_test.max(),y_pred.max())
